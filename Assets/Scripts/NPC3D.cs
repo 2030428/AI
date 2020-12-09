@@ -11,7 +11,8 @@ public class NPC3D : MonoBehaviour
     public YarnProgram scriptToLoad;
     DialogueRunner dialogueRunner; //refernce to the dialogue control
     private GameObject dialogueCanavas; //refernce to the canvas
-    Vector3 PostionSpeachBubble = new Vector3(0f, 0.0f, -0.6f);
+    public Vector3 PostionSpeechBubble = new Vector3(0f, 2.3f, 0f);
+    public Vector3 ResetSpeechBubble = new Vector3(0f, -0.8f, 0f);
 
 
     /// </summary>
@@ -42,9 +43,10 @@ public class NPC3D : MonoBehaviour
             {
                 if (dialogueCanavas != null)
                 {
+                    Debug.Log("Triggererd");
                     //move the Canvas to the object and off set
                     dialogueCanavas.transform.SetParent(transform.parent.transform); // use the root to prevent scaling
-                    dialogueCanavas.GetComponent<RectTransform>().anchoredPosition3D = transform.parent.TransformVector(PostionSpeachBubble);
+                    dialogueCanavas.GetComponent<RectTransform>().anchoredPosition3D = transform.parent.TransformVector(PostionSpeechBubble);
                 }
 
                 if (dialogueRunner.IsDialogueRunning)
@@ -55,6 +57,12 @@ public class NPC3D : MonoBehaviour
                 dialogueRunner.StartDialogue(talkToNode);
             }
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        dialogueCanavas.transform.SetParent(transform.parent.transform); // use the root to prevent scaling
+        dialogueCanavas.GetComponent<RectTransform>().anchoredPosition3D = transform.parent.TransformVector(ResetSpeechBubble);
     }
 
 }

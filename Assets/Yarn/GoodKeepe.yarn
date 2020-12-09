@@ -1,0 +1,31 @@
+title: GoodKeeper.Start
+tags: 
+colorID: 0
+position: 307,223
+---
+$Hello
+[[ How's your day going? |GoodKeeper.Day]]
+===
+title: GoodKeeper.Day
+tags: 
+colorID: 0
+position: 109,491
+---
+I'm not too bad thanks, what about you?
+[[ answer: |Dan.PlayerGood]]
+[[ answer: |Dan.PlayerBad]]
+===
+title: Dan.PlayerGood
+tags: 
+colorID: 0
+position: -43,732
+---
+Great to hear
+===
+title: Dan.PlayerBad
+tags: 
+colorID: 0
+position: 191,735
+---
+Oh dear!!
+===
