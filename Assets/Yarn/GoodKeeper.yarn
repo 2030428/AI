@@ -1,10 +1,17 @@
 title: GoodKeeper.Start
 tags: 
 colorID: 0
-position: 307,223
+position: 306,221
 ---
-$Hello
-[[ How's your day going? |GoodKeeper.Day]]
+Hello
+
+<<set $GKSpoke1 to true>>
+
+<<if $BKSpoke1 is true>>
+
+[[ Hello, my name is Mr. Good! I look after these lovely Green Balls |GoodKeeper.Day]]
+
+<<endif>>
 ===
 title: GoodKeeper.Day
 tags: 
@@ -12,17 +19,17 @@ colorID: 0
 position: 109,491
 ---
 I'm not too bad thanks, what about you?
-[[ answer: |Dan.PlayerGood]]
-[[ answer: |Dan.PlayerBad]]
+[[ I'm great, thanks! |GoodKeeper.PlayerGood]]
+[[ Been better... |GoodKeeper.PlayerBad]]
 ===
-title: Dan.PlayerGood
+title: GoodKeeper.PlayerGood
 tags: 
 colorID: 0
 position: -43,732
 ---
 Great to hear
 ===
-title: Dan.PlayerBad
+title: GoodKeeper.PlayerBad
 tags: 
 colorID: 0
 position: 191,735

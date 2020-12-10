@@ -8,18 +8,17 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: en-GB
+  baseLanguageID: 
   stringIDs:
-  - NewFile-GoodKeeper.Start-0
-  - NewFile-GoodKeeper.Start-1
-  - NewFile-GoodKeeper.Day-2
-  - NewFile-GoodKeeper.Day-3
-  - NewFile-GoodKeeper.Day-4
-  - NewFile-Dan.PlayerGood-5
-  - NewFile-Dan.PlayerBad-6
+  - GoodKeeper-GoodKeeper.Start-0
+  - GoodKeeper-GoodKeeper.Start-1
+  - GoodKeeper-GoodKeeper.Day-2
+  - GoodKeeper-GoodKeeper.Day-3
+  - GoodKeeper-GoodKeeper.Day-4
+  - GoodKeeper-GoodKeeper.PlayerGood-5
+  - GoodKeeper-GoodKeeper.PlayerBad-6
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
-  baseLanguage: {fileID: 7128917941130120860, guid: eac73574a81c9d748b5ecb49372cb8d9,
-    type: 3}
+  baseLanguage: {instanceID: 0}
   localizations: []

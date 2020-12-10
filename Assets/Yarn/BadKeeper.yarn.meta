@@ -14,25 +14,30 @@ ScriptedImporter:
   - BadKeeper-BadKeeper.Start-1
   - BadKeeper-BadKeeper.Start-2
   - BadKeeper-BadKeeper.Start-3
-  - BadKeeper-GoodKeeper.Spoken-4
-  - BadKeeper-GoodKeeper.Spoken-5
-  - BadKeeper-GoodKeeper.Spoken-6
-  - BadKeeper-NeutralKeeper.Spoken-7
-  - BadKeeper-NeutralKeeper.Spoken-8
-  - BadKeeper-NeutralKeeper.Spoken-9
-  - BadKeeper-Bad.GoodGood-10
-  - BadKeeper-Bad.GoodBad-11
-  - BadKeeper-BadKeeper.next1-12
-  - BadKeeper-BadKeeper.next1-13
-  - BadKeeper-BadKeeper.next1-14
-  - BadKeeper-BadKeeper.next1-15
-  - BadKeeper-Bad.NeutralGood-16
-  - BadKeeper-Bad.NeutralBad-17
-  - BadKeeper-BadKeeper.GoodChoice-18
-  - BadKeeper-BadKeeper.GoodChoice-19
-  - BadKeeper-BadKeeper.BadChoice-20
-  - BadKeeper-BadKeeper.BadChoice-21
-  - BadKeeper-BadKeeper.NeutralChoice-22
+  - BadKeeper-BadKeeper.Start-4
+  - BadKeeper-BadKeeper.Start-5
+  - BadKeeper-BadKeeper.Start-6
+  - BadKeeper-BadKeeper.Start-7
+  - BadKeeper-BadKeeper.Start-8
+  - BadKeeper-BadKeeper.Start-9
+  - BadKeeper-BadKeeper.Start-10
+  - BadKeeper-BadKeeper.Start-11
+  - BadKeeper-BadKeeper.Start-12
+  - BadKeeper-Bad.GoodGood-13
+  - BadKeeper-Bad.GoodBad-14
+  - BadKeeper-Bad.GoodBad-15
+  - BadKeeper-BadKeeper.next1-16
+  - BadKeeper-BadKeeper.next1-17
+  - BadKeeper-BadKeeper.next1-18
+  - BadKeeper-BadKeeper.next1-19
+  - BadKeeper-Bad.NeutralGood-20
+  - BadKeeper-Bad.NeutralBad-21
+  - BadKeeper-BadKeeper.GoodChoice-22
+  - BadKeeper-BadKeeper.GoodChoice-23
+  - BadKeeper-BadKeeper.BadChoice-24
+  - BadKeeper-BadKeeper.BadChoice-25
+  - BadKeeper-BadKeeper.NeutralChoice-26
+  - BadKeeper-BadKeeper.leave-27
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
