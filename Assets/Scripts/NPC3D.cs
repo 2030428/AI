@@ -12,10 +12,9 @@ public class NPC3D : MonoBehaviour
     DialogueRunner dialogueRunner; //refernce to the dialogue control
     private GameObject dialogueCanavas; //refernce to the canvas
     public GameObject Keeper;                                           //GameObject of Keeper
-    public Vector3 PostionSpeechBubble = new Vector3(0f, 2.3f, 0f);
-    public Vector3 ResetSpeechBubble = new Vector3(0f, -0.8f, 0f);
-    public Vector3 KeeperRoatation;                                     // Vector3 for the Keeper roation
-        
+    private Vector3 PostionSpeechBubble = new Vector3(0f, 2.3f, 0f);
+    private Vector3 ResetSpeechBubble = new Vector3(0f, -0.8f, 0f);
+    private Vector3 KeeperRoatation;                                     // Vector3 for the Keeper roation
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +35,7 @@ public class NPC3D : MonoBehaviour
 
     private void Update()
     {
+
           var angleX = Keeper.transform.eulerAngles.x;                  //finds and sets to variable Keeper x rotation
           var angleY = Keeper.transform.eulerAngles.y - 180;            //finds and sets to variable Keeper y rotation, - 180 so is correct
           var angleZ = Keeper.transform.eulerAngles.z;                  //finds and sets to variable keeper z rotation

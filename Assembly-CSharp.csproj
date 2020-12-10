@@ -72,9 +72,11 @@
     <Compile Include="Assets\Samples\Yarn Spinner\1.2.7\Space\Scripts\NodeVisitedTracker.cs" />
     <Compile Include="Assets\Samples\Yarn Spinner\1.2.7\Space\Scripts\PlayerCharacter.cs" />
     <Compile Include="Assets\Samples\Yarn Spinner\1.2.7\Space\Scripts\SpriteSwitcher.cs" />
+    <Compile Include="Assets\Scripts\CubeAIController.cs" />
     <Compile Include="Assets\Scripts\FollowerController.cs" />
     <Compile Include="Assets\Scripts\NPC3D.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\SphereAIController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

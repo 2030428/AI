@@ -93,7 +93,7 @@ Awesome, they'll be really pleased to hear that!
 
 Some are going to come with you now.
 
-<<set $badfollowers to 1>>
+<<set $badFollowers to 1>>
 ===
 title: BadKeeper.NeutralChoice
 tags: 
