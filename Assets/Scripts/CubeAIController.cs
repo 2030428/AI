@@ -6,20 +6,10 @@ using UnityEngine.AI;
 public class CubeAIController : MonoBehaviour
 {
     public Animator CubeAnimator;
-
     public FollowerController numberOfFollowers;
-
     public Transform target;
-
     public NavMeshAgent Cube1, Cube2, Cube3, Cube4, Cube5;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (numberOfFollowers.badFollowers == 1)

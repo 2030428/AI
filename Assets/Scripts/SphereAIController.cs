@@ -6,20 +6,10 @@ using UnityEngine.AI;
 public class SphereAIController : MonoBehaviour
 {
     public Animator SphereAnimator;
-
     public FollowerController numberOfFollowers;
-
     public Transform target;
-
     public NavMeshAgent Sphere1, Sphere2, Sphere3, Sphere4, Sphere5;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (numberOfFollowers.goodFollowers == 1)
