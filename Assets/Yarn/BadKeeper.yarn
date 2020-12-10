@@ -1,0 +1,102 @@
+title: BadKeeper.Start
+tags: 
+colorID: 1
+position: 338,-355
+---
+Howdy, I'm a cube rancher! These Red babies just love to bounce and spin around the place!
+
+<<set $BKSpoke1 to true>> 
+
+<<if $GKSpoke1 is true>>
+
+[[ I see you've spoken to that goody two shoes over there. What did you think about him? |GoodKeeper.Spoken]]
+
+<<elseif $NKSpoke1 is true>>
+
+[[ You've already spoken to that beige guy?? How boring is he?? |NeutralKeeper.Spoken]]
+
+<<endif>>
+[[ So you came to speak to me first, eh? Good choice!! |BadKeeper.next1]]
+===
+title: GoodKeeper.Spoken
+tags: 
+colorID: 0
+position: 620,-91
+---
+What did you think of that guy anyway?
+[[ answer: |Bad.GoodGood]]
+[[ answer: |Bad.GoodBad]]
+===
+title: NeutralKeeper.Spoken
+tags: 
+colorID: 0
+position: 343,405
+---
+What did you think of that boring old sod anyway?
+[[ answer: |Bad.NeutralGood]]
+[[ answer: |Bad.NeutralBad]]
+===
+title: Bad.GoodGood
+tags: 
+colorID: 0
+position: 712,213
+---
+Empty Text
+===
+title: Bad.GoodBad
+tags: 
+colorID: 0
+position: 952,218
+---
+Empty Text
+===
+title: BadKeeper.next1
+tags: 
+colorID: 0
+position: 10,-114
+---
+Some of my cubes like to get out and about from the pen on occasion, wanna let them come with you?
+
+[[ nah, they're not really my style, I prefer the spheres|BadKeeper.GoodChoice]]
+[[ Yeah alright, I am quite fond of cubes, especially one's that bounce! Thanks!|BadKeeper.BadChoice]]
+[[ I'm more of a beige man, I think I'll go with him. |BadKeeper.NeutralChoice]]
+===
+title: Bad.NeutralGood
+tags: 
+colorID: 0
+position: 169,676
+---
+Empty Text
+===
+title: Bad.NeutralBad
+tags: 
+colorID: 0
+position: 456,680
+---
+Empty Text
+===
+title: BadKeeper.GoodChoice
+tags: 
+colorID: 0
+position: -340,-470
+---
+Ah, I knew you would say that, you look like the sort!
+
+Get out of here!
+===
+title: BadKeeper.BadChoice
+tags: 
+colorID: 0
+position: -337,-112
+---
+Awesome, they'll be really pleased to hear that!
+
+Some are going to come with you now.
+===
+title: BadKeeper.NeutralChoice
+tags: 
+colorID: 0
+position: -332,211
+---
+Oh really? Go with Mr. Boring then, see if I care!
+===

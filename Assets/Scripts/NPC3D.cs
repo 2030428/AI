@@ -11,11 +11,12 @@ public class NPC3D : MonoBehaviour
     public YarnProgram scriptToLoad;
     DialogueRunner dialogueRunner; //refernce to the dialogue control
     private GameObject dialogueCanavas; //refernce to the canvas
+    public GameObject Keeper;                                           //GameObject of Keeper
     public Vector3 PostionSpeechBubble = new Vector3(0f, 2.3f, 0f);
     public Vector3 ResetSpeechBubble = new Vector3(0f, -0.8f, 0f);
+    public Vector3 KeeperRoatation;                                     // Vector3 for the Keeper roation
+        
 
-
-    /// </summary>
     // Start is called before the first frame update
     void Start()
     {
@@ -30,9 +31,16 @@ public class NPC3D : MonoBehaviour
         if (scriptToLoad != null && dialogueRunner != null && dialogueRunner != null) 
         {
             dialogueRunner.Add(scriptToLoad); //adds the script to the dialogue system
-        }
+        }        
     }
 
+    private void Update()
+    {
+          var angleX = Keeper.transform.eulerAngles.x;                  //finds and sets to variable Keeper x rotation
+          var angleY = Keeper.transform.eulerAngles.y - 180;            //finds and sets to variable Keeper y rotation, - 180 so is correct
+          var angleZ = Keeper.transform.eulerAngles.z;                  //finds and sets to variable keeper z rotation
+          KeeperRoatation = new Vector3(angleX, angleY, angleZ);        //sets Vector3 to current Keeper rotation
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -47,6 +55,9 @@ public class NPC3D : MonoBehaviour
                     //move the Canvas to the object and off set
                     dialogueCanavas.transform.SetParent(transform.parent.transform); // use the root to prevent scaling
                     dialogueCanavas.GetComponent<RectTransform>().anchoredPosition3D = transform.parent.TransformVector(PostionSpeechBubble);
+
+                    Quaternion target = Quaternion.Euler(KeeperRoatation);      
+                    dialogueCanavas.transform.rotation = target;                    
                 }
 
                 if (dialogueRunner.IsDialogueRunning)

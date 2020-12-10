@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: 2d51d44a1f3801e48a233ee8da52a73c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - BadKeeper-BadKeeper.Start-0
+  - BadKeeper-BadKeeper.Start-1
+  - BadKeeper-BadKeeper.Start-2
+  - BadKeeper-BadKeeper.Start-3
+  - BadKeeper-GoodKeeper.Spoken-4
+  - BadKeeper-GoodKeeper.Spoken-5
+  - BadKeeper-GoodKeeper.Spoken-6
+  - BadKeeper-NeutralKeeper.Spoken-7
+  - BadKeeper-NeutralKeeper.Spoken-8
+  - BadKeeper-NeutralKeeper.Spoken-9
+  - BadKeeper-Bad.GoodGood-10
+  - BadKeeper-Bad.GoodBad-11
+  - BadKeeper-BadKeeper.next1-12
+  - BadKeeper-BadKeeper.next1-13
+  - BadKeeper-BadKeeper.next1-14
+  - BadKeeper-BadKeeper.next1-15
+  - BadKeeper-Bad.NeutralGood-16
+  - BadKeeper-Bad.NeutralBad-17
+  - BadKeeper-BadKeeper.GoodChoice-18
+  - BadKeeper-BadKeeper.GoodChoice-19
+  - BadKeeper-BadKeeper.BadChoice-20
+  - BadKeeper-BadKeeper.BadChoice-21
+  - BadKeeper-BadKeeper.NeutralChoice-22
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []
