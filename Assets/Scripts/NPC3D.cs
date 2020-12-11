@@ -13,8 +13,8 @@ public class NPC3D : MonoBehaviour
     private GameObject dialogueCanavas; //refernce to the canvas
     public GameObject Keeper;                                           //GameObject of Keeper
     private Vector3 PostionSpeechBubble = new Vector3(0f, 2.3f, 0f);
-    private Vector3 ResetSpeechBubble = new Vector3(0f, -0.8f, 0f);
-    private Vector3 KeeperRoatation;                                     // Vector3 for the Keeper roation
+    private Vector3 ResetSpeechBubble = new Vector3(0f, -0.8f, 0f);     //Vector3 to reset canvas location 
+    private Vector3 KeeperRoatation;                                    //Vector3 for the Keeper roation
 
     // Start is called before the first frame update
     void Start()
@@ -56,8 +56,8 @@ public class NPC3D : MonoBehaviour
                     dialogueCanavas.transform.SetParent(transform.parent.transform); // use the root to prevent scaling
                     dialogueCanavas.GetComponent<RectTransform>().anchoredPosition3D = transform.parent.TransformVector(PostionSpeechBubble);
 
-                    Quaternion target = Quaternion.Euler(KeeperRoatation);      
-                    dialogueCanavas.transform.rotation = target;                    
+                    Quaternion target = Quaternion.Euler(KeeperRoatation);          //finds and stores the roation of the keeper              
+                    dialogueCanavas.transform.rotation = target;                    //sets dialogue canvas to the same, ensuring the are aligned    
                 }
 
                 if (dialogueRunner.IsDialogueRunning)
@@ -73,7 +73,7 @@ public class NPC3D : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         dialogueCanavas.transform.SetParent(transform.parent.transform); // use the root to prevent scaling
-        dialogueCanavas.GetComponent<RectTransform>().anchoredPosition3D = transform.parent.TransformVector(ResetSpeechBubble);
+        dialogueCanavas.GetComponent<RectTransform>().anchoredPosition3D = transform.parent.TransformVector(ResetSpeechBubble);     //ensures dialougue canvas is hidden when not in use
     }
 
 }

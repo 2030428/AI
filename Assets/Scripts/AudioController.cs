@@ -5,71 +5,57 @@ using Yarn.Unity;
 
 public class AudioController : MonoBehaviour
 {
-    public InMemoryVariableStorage audioStore;
-    public int GKHi, BKHi, NKHi;
-    public AudioSource GKIntro, BKIntro, NKIntro;
-    private bool GKOnOff, BKOnOff, NKOnOff;
+    public InMemoryVariableStorage audioStore;                  //creates audioStore value from yarn variable manager
+    public int GKHi, BKHi, NKHi;                                //creates integers
+    public AudioSource GKIntro, BKIntro, NKIntro;               //defines Audio sources
 
     // Start is called before the first frame update
     void Start()
     {
-        if (audioStore.GetValue("$GKHello") != null)
+        if (audioStore.GetValue("$GKHello") != null)            //if this has no value...
         {
-            audioStore.SetValue("$GKHello", 0);
+            audioStore.SetValue("$GKHello", 0);                 //set it to zero
         }
-        if (audioStore.GetValue("BKHello") != null)
-        {
-            audioStore.SetValue("$BKHello", 0);
+        if (audioStore.GetValue("BKHello") != null)             //if this has no value...
+        {       
+            audioStore.SetValue("$BKHello", 0);                 //set it to zero
         }
-        if (audioStore.GetValue("NKHello") != null)
+        if (audioStore.GetValue("NKHello") != null)             //if this has no value...
         {
-            audioStore.SetValue("NKHello", 0);
+            audioStore.SetValue("NKHello", 0);                  //set it to zero
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        GKHi = (int)audioStore.GetValue("$GKHello").AsNumber;
-        BKHi = (int)audioStore.GetValue("$BKHello").AsNumber;
-        NKHi = (int)audioStore.GetValue("$NKHello").AsNumber;
+        GKHi = (int)audioStore.GetValue("$GKHello").AsNumber;   //gets to value from the audioStore reference and sets to integer
+        BKHi = (int)audioStore.GetValue("$BKHello").AsNumber;   //gets to value from the audioStore reference and sets to integer
+        NKHi = (int)audioStore.GetValue("$NKHello").AsNumber;   //gets to value from the audioStore reference and sets to integer
 
-        if (GKHi == 1)
+        if (GKHi == 1)              //if int is equal to this value...
         {
-            if (GKOnOff == true)
-            {
-                GKHelloControl();
-                Debug.Log("Hello");
-            }
+            GKIntro.Play();         //play this audio source
         }
-        if (GKHi == 0)
+        if (GKHi == 0)              //if int is equal to this value...
         {
-            GKOnOff = true;
+            GKIntro.Stop();         //Stop playing audio source
         }
-
-        if (BKHi == 1)
+        if (BKHi == 1)              //if int is equal to this value...
         {
-            BKIntro.Play();
+            BKIntro.Play();         //play this audio source
         }
-        else
+        if (BKHi == 0)              //if int is equal to this value...
         {
-            BKIntro.Stop();
+            BKIntro.Stop();         //stop playing audio source
         }
-        if (NKHi == 1)
+        if (NKHi == 1)              //if int is equal to this value...
         {
-            NKIntro.Play();
+            NKIntro.Play();         //play this audio source
         }
-        else
+        if(NKHi ==0)                //if int is equal to this value
         {
-            NKIntro.Stop();
+            NKIntro.Stop();         //stop playing audio source
         }
     }
-
-    void GKHelloControl()
-    {
-        GKIntro.Play();
-        Debug.Log("Hello Control");
-        GKOnOff = false;
-    }
-
 }
