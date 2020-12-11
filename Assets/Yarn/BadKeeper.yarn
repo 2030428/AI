@@ -3,9 +3,15 @@ tags:
 colorID: 1
 position: 338,-355
 ---
+<<if $badFollowers==5>>
+You've already got all my cubes! Go away!!
+[[ OK, will do, nice meeting you!|Bad.leaveAll]]
+
+<<endif>> 
+
 <<if $BKSpoke1 is false>> 
 
-Howdy, I'm a cube rancher! These Red babies just love to bounce and spin around the place!
+These red babies just love to bounce and spin around the place!
 
 <<if $GKSpoke1 is true>>
 I see you've spoken to that goody two shoes over there. What did you think about him?
@@ -18,6 +24,8 @@ You've already spoken to that beige guy?? How boring is he??
 [[ I think he's a bit boring really...|Bad.NeutralBad]] 
 
 <<elseif $GKSpoke1 is false and $NKSpoke1 is false >> 
+Howdy, I'm a cube rancher! 
+
 So you came to speak to me first, eh? Good choice!!
 [[ Of course! You look cool!|BadKeeper.next1]]
 [[ Not on purpose...|BadKeeper.leave]] 
@@ -44,16 +52,19 @@ Ah, get out of here you wimp!
 title: Bad.GoodBad
 tags: 
 colorID: 0
-position: 696,-402
+position: 694,-403
 ---
 Hehehe! I know right? What a loser!
 
-Some of my cubes want to come with you, how does that sound?
+One of my cubes wants to come with you, how does that sound?
+
+[[ Sure!|Bad.Follower]]
+[[ I think I'm OK, thanks|Bad.GoodGood]]
 ===
 title: BadKeeper.next1
 tags: 
 colorID: 0
-position: 10,-114
+position: 8,-116
 ---
 Some of my cubes like to get out and about from the pen on occasion, wanna let them come with you?
 
@@ -64,16 +75,23 @@ Some of my cubes like to get out and about from the pen on occasion, wanna let t
 title: Bad.NeutralGood
 tags: 
 colorID: 0
-position: 227,176
+position: 226,175
 ---
-Well you're too boring for me!! I don't think that my cubes would like you really...
+Well, you're too boring for me!! I don't think that my cubes would like you really...
+
+See ya!
 ===
 title: Bad.NeutralBad
 tags: 
 colorID: 0
 position: 507,179
 ---
-I knew that you'd say that! I think that my cubes would like to come with you. Can some tag along on your walk?
+I knew that you'd say that! I think that my cubes would like to come with you. 
+
+Can one of them tag along on your walk?
+
+[[ I think I can handle that|Bad.Follower]]
+[[ Hmm, I don't think so|BadKeeper.leave]]
 ===
 title: BadKeeper.GoodChoice
 tags: 
@@ -91,9 +109,9 @@ position: -337,-112
 ---
 Awesome, they'll be really pleased to hear that!
 
-Some are going to come with you now.
+One of them is going to come with you now.
 
-<<set $badFollowers to 1>>
+<<set $badFollowers to $badFollowers + 1>>
 ===
 title: BadKeeper.NeutralChoice
 tags: 
@@ -105,7 +123,25 @@ Oh really? Go with Mr. Boring then, see if I care!
 title: BadKeeper.leave
 tags: 
 colorID: 0
-position: 343,-824
+position: 340,-672
 ---
 Fine then!!! You'll be back!!!
+===
+title: Bad.Follower
+tags: 
+colorID: 0
+position: 977,-406
+---
+I knew I liked you!
+
+One is coming with you now, see ya'!
+
+<<set $badFollowers to $badFollowers + 1>>
+===
+title: Bad.leaveAll
+tags: 
+colorID: 0
+position: 628,-739
+---
+Yeah, whatever...
 ===

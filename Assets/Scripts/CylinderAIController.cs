@@ -36,7 +36,7 @@ public class CylinderAIController : MonoBehaviour
             Cylinder4.SetDestination(targetPen4.position);
             Cylinder5.SetDestination(targetPen5.position);
         }
-        if (numberOfFollowers.goodFollowers == 3)
+        if (numberOfFollowers.neutralFollowers == 3)
         {
             Cylinder1.SetDestination(targetPlayer.position);
             Cylinder2.SetDestination(targetPlayer.position);
@@ -44,7 +44,7 @@ public class CylinderAIController : MonoBehaviour
             Cylinder4.SetDestination(targetPen4.position);
             Cylinder5.SetDestination(targetPen5.position);
         }
-        if (numberOfFollowers.goodFollowers == 4)
+        if (numberOfFollowers.neutralFollowers == 4)
         {
             Cylinder1.SetDestination(targetPlayer.position);
             Cylinder2.SetDestination(targetPlayer.position);
@@ -53,7 +53,7 @@ public class CylinderAIController : MonoBehaviour
             Cylinder5.SetDestination(targetPen5.position);
 
         }
-        if (numberOfFollowers.goodFollowers == 5)
+        if (numberOfFollowers.neutralFollowers == 5)
         {
             Cylinder1.SetDestination(targetPlayer.position);
             Cylinder2.SetDestination(targetPlayer.position);

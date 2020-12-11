@@ -23,21 +23,33 @@ ScriptedImporter:
   - BadKeeper-BadKeeper.Start-10
   - BadKeeper-BadKeeper.Start-11
   - BadKeeper-BadKeeper.Start-12
-  - BadKeeper-Bad.GoodGood-13
-  - BadKeeper-Bad.GoodBad-14
-  - BadKeeper-Bad.GoodBad-15
-  - BadKeeper-BadKeeper.next1-16
-  - BadKeeper-BadKeeper.next1-17
-  - BadKeeper-BadKeeper.next1-18
-  - BadKeeper-BadKeeper.next1-19
-  - BadKeeper-Bad.NeutralGood-20
-  - BadKeeper-Bad.NeutralBad-21
-  - BadKeeper-BadKeeper.GoodChoice-22
-  - BadKeeper-BadKeeper.GoodChoice-23
-  - BadKeeper-BadKeeper.BadChoice-24
-  - BadKeeper-BadKeeper.BadChoice-25
-  - BadKeeper-BadKeeper.NeutralChoice-26
-  - BadKeeper-BadKeeper.leave-27
+  - BadKeeper-BadKeeper.Start-13
+  - BadKeeper-BadKeeper.Start-14
+  - BadKeeper-BadKeeper.Start-15
+  - BadKeeper-Bad.GoodGood-16
+  - BadKeeper-Bad.GoodBad-17
+  - BadKeeper-Bad.GoodBad-18
+  - BadKeeper-Bad.GoodBad-19
+  - BadKeeper-Bad.GoodBad-20
+  - BadKeeper-BadKeeper.next1-21
+  - BadKeeper-BadKeeper.next1-22
+  - BadKeeper-BadKeeper.next1-23
+  - BadKeeper-BadKeeper.next1-24
+  - BadKeeper-Bad.NeutralGood-25
+  - BadKeeper-Bad.NeutralGood-26
+  - BadKeeper-Bad.NeutralBad-27
+  - BadKeeper-Bad.NeutralBad-28
+  - BadKeeper-Bad.NeutralBad-29
+  - BadKeeper-Bad.NeutralBad-30
+  - BadKeeper-BadKeeper.GoodChoice-31
+  - BadKeeper-BadKeeper.GoodChoice-32
+  - BadKeeper-BadKeeper.BadChoice-33
+  - BadKeeper-BadKeeper.BadChoice-34
+  - BadKeeper-BadKeeper.NeutralChoice-35
+  - BadKeeper-BadKeeper.leave-36
+  - BadKeeper-Bad.Follower-37
+  - BadKeeper-Bad.Follower-38
+  - BadKeeper-Bad.leaveAll-39
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 

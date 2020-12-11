@@ -1,38 +1,147 @@
 title: GoodKeeper.Start
 tags: 
 colorID: 0
-position: 306,221
+position: 302,216
 ---
-Hello
+<<if $goodFollowers==5>>
+Sorry, looks like you've gotten all of my balls already, I've nothing more to give!
+[[ OK, sorry about that, but thanks for the followers|Good.leaveAll]]
 
-<<set $GKSpoke1 to true>>
+<<endif>> 
+
+<<if $GKSpoke1 is false>> 
+
+I look after these lovely green balls! Aren't they great?
 
 <<if $BKSpoke1 is true>>
 
-[[ Hello, my name is Mr. Good! I look after these lovely Green Balls |GoodKeeper.Day]]
+I couldn't help but notice that you were speaking with that no good cube girl over there!
+
+What did you think about her?
+[[ She wasn't all bad really, I quite liked her and her cubes!|Good.BadGood]]
+[[ Not my cup of tea, if I'm honest...|Good.BadBad]]
+
+<<elseif $NKSpoke1 is true>>
+I see that you spoke with the bland cylinder guy, he's a bit dull in my opinion.
+[[ I didn't think he was that bad really, I quite liked him.|Good.NeutralGood]]
+[[ My God yes!|Good.NeutralBad]]
+
+<<elseif $BKSpoke1 is false and $NKSpoke1 is false>>
+Hi there, so nice to meet you!! It's great to be the first to welcome you!!
+
+What do you think of my pen?
+
+[[ It's great!|GoodKeeper.next1]]
+[[ I'm not too sure...|Good.BadGood]]
+
+<<endif>> 
+
+<<set $GKSpoke1 to true>>
+
+<<elseif $GKSpoke1 is true>>
+
+Welcome back to my pen! How can I help you?
+[[ I'd love to take another look at your balls, please.|GoodKeeper.next1]]
+[[ Nothing for now, thanks.|GoodKeeper.leave]]
 
 <<endif>>
 ===
-title: GoodKeeper.Day
+title: Good.BadGood
 tags: 
 colorID: 0
-position: 109,491
+position: 710,75
 ---
-I'm not too bad thanks, what about you?
-[[ I'm great, thanks! |GoodKeeper.PlayerGood]]
-[[ Been better... |GoodKeeper.PlayerBad]]
+Well, well, well, I didn't expect you to say that!
+
+I don't think I can give you one of my balls right now, bye for now.
 ===
-title: GoodKeeper.PlayerGood
+title: Good.BadBad
 tags: 
 colorID: 0
-position: -43,732
+position: 714,328
 ---
-Great to hear
+I feel the same!
+
+You know, maybe you'd like to tak one of my balls with you?
+
+They like to get out of the pen every now and again.
+[[ That sounds fun, sure!|Good.GoodChoice]]
+[[ I'm OK for now, but thanks all the same|Good.BadChoice]]
 ===
-title: GoodKeeper.PlayerBad
+title: Good.NeutralGood
 tags: 
 colorID: 0
-position: 191,735
+position: 162,787
 ---
-Oh dear!!
+I suppose you're right...
+
+Cylinders are just outstretched balls at the end of the day!
+
+How about one of my balls comes with you, would you like that?
+
+[[ That sounds awesome, thanks!|Good.GoodChoice]]
+[[ Hmm, I don't think so, thanks all the same|Good.BadChoice]]
+===
+title: Good.NeutralBad
+tags: 
+colorID: 0
+position: 459,775
+---
+Well, no need to say it like that!
+
+I don't think that with an attitude like that, my balls would like you, maybe come back later.
+===
+title: GoodKeeper.next1
+tags: 
+colorID: 0
+position: -68,204
+---
+My balls like to get out of their pen from time to time, do you mind if one tags along?
+
+[[ Sure! That sounds like fun!|Good.GoodChoice]]
+[[ If I'm honest, I do quite prefer the cubes over there...|Good.BadChoice]]
+[[ I'm more of a cylinder type of guy, nice and boring|Good.NeutralChoice]]
+===
+title: GoodKeeper.leave
+tags: 
+colorID: 0
+position: 71,-197
+---
+No problem, come back anytime!
+===
+title: Good.GoodChoice
+tags: 
+colorID: 0
+position: -316,-84
+---
+Awesome, thanks!
+
+One is coming to you now, have fun!
+
+<<set $goodFollowers to $goodFollowers + 1>>
+===
+title: Good.BadChoice
+tags: 
+colorID: 0
+position: -333,197
+---
+Well, to each their own, I suppose.
+
+You're always welcome back if you change your mind, bye now!
+===
+title: Good.NeutralChoice
+tags: 
+colorID: 0
+position: -310,501
+---
+Oh my! I didn't expect that, you seem so nice!
+
+That's up to you I suppose, but you're always welcome here another time.
+===
+title: Good.leaveAll
+tags: 
+colorID: 0
+position: 442,-143
+---
+Bye!!
 ===

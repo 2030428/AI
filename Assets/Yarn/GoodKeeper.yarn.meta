@@ -12,11 +12,47 @@ ScriptedImporter:
   stringIDs:
   - GoodKeeper-GoodKeeper.Start-0
   - GoodKeeper-GoodKeeper.Start-1
-  - GoodKeeper-GoodKeeper.Day-2
-  - GoodKeeper-GoodKeeper.Day-3
-  - GoodKeeper-GoodKeeper.Day-4
-  - GoodKeeper-GoodKeeper.PlayerGood-5
-  - GoodKeeper-GoodKeeper.PlayerBad-6
+  - GoodKeeper-GoodKeeper.Start-2
+  - GoodKeeper-GoodKeeper.Start-3
+  - GoodKeeper-GoodKeeper.Start-4
+  - GoodKeeper-GoodKeeper.Start-5
+  - GoodKeeper-GoodKeeper.Start-6
+  - GoodKeeper-GoodKeeper.Start-7
+  - GoodKeeper-GoodKeeper.Start-8
+  - GoodKeeper-GoodKeeper.Start-9
+  - GoodKeeper-GoodKeeper.Start-10
+  - GoodKeeper-GoodKeeper.Start-11
+  - GoodKeeper-GoodKeeper.Start-12
+  - GoodKeeper-GoodKeeper.Start-13
+  - GoodKeeper-GoodKeeper.Start-14
+  - GoodKeeper-GoodKeeper.Start-15
+  - GoodKeeper-GoodKeeper.Start-16
+  - GoodKeeper-Good.BadGood-17
+  - GoodKeeper-Good.BadGood-18
+  - GoodKeeper-Good.BadBad-19
+  - GoodKeeper-Good.BadBad-20
+  - GoodKeeper-Good.BadBad-21
+  - GoodKeeper-Good.BadBad-22
+  - GoodKeeper-Good.BadBad-23
+  - GoodKeeper-Good.NeutralGood-24
+  - GoodKeeper-Good.NeutralGood-25
+  - GoodKeeper-Good.NeutralGood-26
+  - GoodKeeper-Good.NeutralGood-27
+  - GoodKeeper-Good.NeutralGood-28
+  - GoodKeeper-Good.NeutralBad-29
+  - GoodKeeper-Good.NeutralBad-30
+  - GoodKeeper-GoodKeeper.next1-31
+  - GoodKeeper-GoodKeeper.next1-32
+  - GoodKeeper-GoodKeeper.next1-33
+  - GoodKeeper-GoodKeeper.next1-34
+  - GoodKeeper-GoodKeeper.leave-35
+  - GoodKeeper-Good.GoodChoice-36
+  - GoodKeeper-Good.GoodChoice-37
+  - GoodKeeper-Good.BadChoice-38
+  - GoodKeeper-Good.BadChoice-39
+  - GoodKeeper-Good.NeutralChoice-40
+  - GoodKeeper-Good.NeutralChoice-41
+  - GoodKeeper-Good.leaveAll-42
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
