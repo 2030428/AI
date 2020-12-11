@@ -1,7 +1,7 @@
 title: GoodKeeper.Start
 tags: 
 colorID: 0
-position: 302,216
+position: 301,215
 ---
 <<set $GKHello to 1>>
 
@@ -64,7 +64,7 @@ I don't think I can give you one of my balls right now, bye for now.
 title: Good.BadBad
 tags: 
 colorID: 0
-position: 714,328
+position: 712,326
 ---
 I feel the same!
 
@@ -118,7 +118,7 @@ No problem, come back anytime!
 title: Good.GoodChoice
 tags: 
 colorID: 0
-position: -316,-84
+position: -317,-85
 ---
 Awesome, thanks!
 

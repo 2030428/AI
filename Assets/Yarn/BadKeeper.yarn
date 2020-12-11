@@ -1,17 +1,23 @@
 title: BadKeeper.Start
 tags: 
 colorID: 1
-position: 338,-355
+position: 337,-357
 ---
+<<set $BKHello to 1>> 
+
 <<if $badFollowers==5>>
 You've already got all my cubes! Go away!!
 [[ OK, will do, nice meeting you!|Bad.leaveAll]]
+
+<<set $BKHello to 0>> 
 
 <<endif>> 
 
 <<if $BKSpoke1 is false>> 
 
 These red babies just love to bounce and spin around the place!
+
+<<set $BKHello to 0>> 
 
 <<if $GKSpoke1 is true>>
 I see you've spoken to that goody two shoes over there. What did you think about him?

@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 54ab330c0ffd58c4b9193a541ce6fe3f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs: []
+  compilationStatus: 0
+  isSuccesfullyCompiled: 0
+  compilationErrorMessage: "Error on line 42 at position 63:\nmismatched input ']'
+    expecting FORMAT_FUNCTION_EXPRESSION_START\r\n[[ Not on purpose really... Plus
+    there's nothing wrong with [i]ME[/i]...|Neutral.GoodGood]]\r\n                                                             
+    ^"
+  baseLanguage: {instanceID: 0}
+  localizations: []

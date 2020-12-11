@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 2b02cd9df3d5144459dd4acb40f3b9b5
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Judge-Judge.Start-0
+  - Judge-Judge.Start-1
+  - Judge-Judge.Start-2
+  - Judge-Judge.Start-3
+  - Judge-Judge.Start-4
+  - Judge-Judge.Start-5
+  - Judge-Judge.Start-6
+  - Judge-Judge.Judge-7
+  - Judge-Judge.Judge-8
+  - Judge-Judge.Leave-9
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

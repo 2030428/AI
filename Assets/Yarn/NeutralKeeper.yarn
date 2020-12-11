@@ -1,0 +1,143 @@
+title: NeutralKeeper.Start
+tags: 
+colorID: 0
+position: 306,221
+---
+<<set $NKHello to 1>>
+
+<<if $neutralFollowers==5>>
+I think you already have all of my cylinders, I have none left for me...
+[[ Thanks for being so generous! Bye!!|Neutral.leaveAll]]
+
+<<set $NKHello to 0>>
+
+<<endif>>
+
+<<if $NKSpoke1 is false>>
+
+These are my cylinders.
+
+<<set $NKHello to 0>>
+
+<<if $GKSpoke1 is true>>
+
+So you spoke to that happy buggar over there have you?
+
+Far to bubbly for me...
+[[ You think so? I didn't really notice...|Neutral.GoodGood]]
+[[ Damn straight!!|Neutral.GoodBad]]
+
+<<elseif $BKSpoke1 is true>>
+
+Went straight over to the woman, eh? Always the same with you people...
+[[ Of course!! She seemed really cool!|Neutral.BadGood]]
+[[ Well, she wasn't that nice really to be honest|Neutral.BadBad]]
+
+<<elseif $GKSpoke1 is false and $BKSpoke1 is false>>
+Wow, I don't believe it, you came straight to me?!?
+
+What's wrong with you? Did my pen catch your eye or something?
+
+[[ Yeah, well, it looked quite nice, love me a cylinder!!|NeutralKeeper.next1]]
+[[ Not on purpose really... Plus there's nothing wrong with ME...|Neutral.GoodGood]]
+
+<<endif>>
+
+<<set $NKSpoke1 to true>>
+
+<<elseif $NKSpoke1 is true>>
+
+Seriously, you again? What's a guy got to do to get some peace??
+
+[[ Well, I just wanted to have another look at your pen really|NeutralKeeper.next1]]
+[[ Ah, forget it...|NeutralKeeper.leave]]
+
+<<endif>>
+===
+title: Neutral.leaveAll
+tags: 
+colorID: 0
+position: 519,-147
+---
+Ahh, get outta here!!
+===
+title: Neutral.GoodBad
+tags: 
+colorID: 0
+position: 200,867
+---
+Yeah, I know right?? I can't stand people like that!!
+
+You seem like the sort of person that could really look after one of my cylinders well.
+
+Do you want one?
+[[ Sure, that'd be great!!|Neutral.GoodChoice]]
+[[ I really think I'm good, thanks|Neutral.BadChoice]]
+===
+title: Neutral.BadGood
+tags: 
+colorID: 0
+position: 790,119
+---
+To be honest, I'm the same!!
+
+Come to think of it, you're just the kind of person I would want to have one of my cylinders.
+
+What do you think?
+[[ Yeah sure, why not?|Neutral.GoodChoice]]
+[[ I'm not really interested, has to be said...|Neutral.BadChoice]]
+===
+title: Neutral.BadBad
+tags: 
+colorID: 0
+position: 772,402
+---
+Well, I quite like her, so why don't you just clear off out of here!!
+===
+title: Neutral.GoodGood
+tags: 
+colorID: 0
+position: 433,869
+---
+Well maybe you should!!
+
+I don't want to have to talk with someone that doesn't pay attention....
+===
+title: NeutralKeeper.next1
+tags: 
+colorID: 0
+position: -82,261
+---
+Some of my cylinders are getting a bit bored just bouncing around in their pen.
+
+Do you think there's a chance that you could take one off my hands, show him some excitement?
+[[ Alright then, I don't mind really|Neutral.GoodChoice]]
+[[ Nah, I think I'm good actually|Neutral.BadChoice]]
+===
+title: NeutralKeeper.leave
+tags: 
+colorID: 0
+position: 204,-276
+---
+Well, you can always come back, if you feel you really have to.
+===
+title: Neutral.GoodChoice
+tags: 
+colorID: 0
+position: -423,-70
+---
+That's great, you're nearly putting me in a good mood, but only nearly.
+
+Here comes one now, take care of him please!
+
+<<set $neutralFollowers to $neutralFollowers + 1>>
+===
+title: Neutral.BadChoice
+tags: 
+colorID: 0
+position: -430,231
+---
+All you people are the same!
+
+I guess you could always come back later if you want to.
+===

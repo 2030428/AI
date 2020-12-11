@@ -5,7 +5,7 @@ using Yarn.Unity;
 
 public class FollowerController : MonoBehaviour
 {
-    public int goodFollowers, badFollowers, neutralFollowers;
+    public int goodFollowers, badFollowers, neutralFollowers, judgeDance;
     public  InMemoryVariableStorage yarnStorage;
 
     void Start()
@@ -22,6 +22,10 @@ public class FollowerController : MonoBehaviour
         {
             yarnStorage.SetValue("$neutralFollowers", 0);           //set neutralFollower value to zero
         }
+        if (yarnStorage.GetValue("$JudgeDance") != null)
+        {
+            yarnStorage.SetValue("$JudgeDance", 0);
+        }
 
     }
 
@@ -30,7 +34,8 @@ public class FollowerController : MonoBehaviour
         neutralFollowers = (int)yarnStorage.GetValue("$neutralFollowers").AsNumber;         //converts Yarn value of neutralFollowers to Int
         goodFollowers = (int)yarnStorage.GetValue("$goodFollowers").AsNumber;               //converts Yarn value of goodFollowers to Int
         badFollowers = (int)yarnStorage.GetValue("$badFollowers").AsNumber;                 //converts Yarn value of badFollowers to Int
-                                                                                            
+        judgeDance = (int)yarnStorage.GetValue("$JudgeDance").AsNumber;
+        
         //Debug.Log("goodFollowers = " + goodFollowers + "badFollowers = " + badFollowers + "neutralFollowers = " + neutralFollowers);        //debug log printing follower numbers
 
     }

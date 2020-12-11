@@ -1,0 +1,48 @@
+title: Judge.Start
+tags: 
+colorID: 0
+position: 359,-140
+---
+<<set $JudgeHello to 1>> 
+
+<<if $JudgeSpoke is true>>
+
+Well, have you spoken to all the guys yet? Do you think you have enough followers?
+[[ I think so...|Judge.Judge]]
+[[ I'll take more time|Judge.Leave]]
+
+<<set $JudgeHello to 0>> 
+
+<<elseif $JudgeSpoke is false>>
+
+Hello, I'm the judge.
+
+Welcome to this little farm here.
+
+What I want you to do is speak with the ranchers here, and try and get as many followers as you can.
+
+Once you have got some, come and speak to me and you could be in for a treat!!
+
+<<set $JudgeHello to 0>> 
+
+<<set $JudgeSpoke to true>> 
+<<endif>>
+===
+title: Judge.Judge
+tags: 
+colorID: 0
+position: 130,198
+---
+Well now, haven't you been busy!
+
+Depending on how many followers you have, you're gonna get a different dance, I hope you enjoy it!!
+
+<<set $JudgeDance to 1>>
+===
+title: Judge.Leave
+tags: 
+colorID: 0
+position: 547,190
+---
+OK, no problem, come back when you are ready.
+===

@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\CubeAIController.cs" />
     <Compile Include="Assets\Scripts\CylinderAIController.cs" />
     <Compile Include="Assets\Scripts\FollowerController.cs" />
+    <Compile Include="Assets\Scripts\JudgeController.cs" />
     <Compile Include="Assets\Scripts\KeeperAIController.cs" />
     <Compile Include="Assets\Scripts\NPC3D.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
