@@ -3,15 +3,21 @@ tags:
 colorID: 0
 position: 302,216
 ---
+<<set $GKHello to 1>>
+
 <<if $goodFollowers==5>>
 Sorry, looks like you've gotten all of my balls already, I've nothing more to give!
 [[ OK, sorry about that, but thanks for the followers|Good.leaveAll]]
+
+<<set $GKHello to 0 >> 
 
 <<endif>> 
 
 <<if $GKSpoke1 is false>> 
 
 I look after these lovely green balls! Aren't they great?
+
+<<set $GKHello to 0 >> 
 
 <<if $BKSpoke1 is true>>
 

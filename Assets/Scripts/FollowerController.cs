@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 
-
-
 public class FollowerController : MonoBehaviour
 {
     public int goodFollowers, badFollowers, neutralFollowers;
@@ -29,7 +27,7 @@ public class FollowerController : MonoBehaviour
 
     void Update()
     {
-        neutralFollowers = (int)yarnStorage.GetValue("$neutralFollowers$").AsNumber;        //converts Yarn value of neutralFollowers to Int
+        neutralFollowers = (int)yarnStorage.GetValue("$neutralFollowers").AsNumber;         //converts Yarn value of neutralFollowers to Int
         goodFollowers = (int)yarnStorage.GetValue("$goodFollowers").AsNumber;               //converts Yarn value of goodFollowers to Int
         badFollowers = (int)yarnStorage.GetValue("$badFollowers").AsNumber;                 //converts Yarn value of badFollowers to Int
                                                                                             
