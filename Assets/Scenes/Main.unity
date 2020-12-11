@@ -2469,13 +2469,14 @@ GameObject:
   - component: {fileID: 393623756}
   - component: {fileID: 393623757}
   - component: {fileID: 393623758}
+  - component: {fileID: 393623759}
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: XRPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &393623754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2502,7 +2503,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393623753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -13.84}
+  m_LocalPosition: {x: 0, y: 0, z: -13.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1236179065}
@@ -2550,6 +2551,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ActionAssets:
   - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!208 &393623759
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393623753}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 1.5, y: 1, z: 1.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &395926428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5001,7 +5018,7 @@ MonoBehaviour:
   keeperAni: {fileID: 2198428}
   target1: {fileID: 1789355812}
   target2: {fileID: 328367108}
-  player: {fileID: 1050851271}
+  player: {fileID: 393623755}
   keeperMesh: {fileID: 159500960}
 --- !u!1001 &1026830695
 PrefabInstance:
@@ -5469,7 +5486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1050851267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6521,7 +6538,7 @@ MonoBehaviour:
   keeperAni: {fileID: 2056079046}
   target1: {fileID: 1541524574}
   target2: {fileID: 106322382}
-  player: {fileID: 1050851271}
+  player: {fileID: 393623755}
   keeperMesh: {fileID: 27144021}
 --- !u!4 &1230187393 stripped
 Transform:
@@ -6873,7 +6890,7 @@ MonoBehaviour:
   target1: {fileID: 475837047}
   target2: {fileID: 1168213168}
   target3: {fileID: 1785539149}
-  player: {fileID: 1050851271}
+  player: {fileID: 393623755}
   judgeMesh: {fileID: 748446956}
 --- !u!114 &1291307536
 MonoBehaviour:
@@ -7904,7 +7921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1496213170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8081,7 +8098,7 @@ MonoBehaviour:
   keeperAni: {fileID: 346043061}
   target1: {fileID: 619467767}
   target2: {fileID: 88310582}
-  player: {fileID: 1050851271}
+  player: {fileID: 393623755}
   keeperMesh: {fileID: 1906241832}
 --- !u!1 &1534300609
 GameObject:
@@ -8869,7 +8886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SphereAnimator: {fileID: 1923550458}
   numberOfFollowers: {fileID: 1436150208}
-  targetPlayer: {fileID: 1050851271}
+  targetPlayer: {fileID: 393623755}
   targetPen1: {fileID: 1292977647}
   targetPen2: {fileID: 1157133383}
   targetPen3: {fileID: 2077403646}
@@ -9961,7 +9978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CubeAnimator: {fileID: 1050041932}
   numberOfFollowers: {fileID: 1436150208}
-  targetPlayer: {fileID: 1050851271}
+  targetPlayer: {fileID: 393623755}
   targetPen1: {fileID: 1304584624}
   targetPen2: {fileID: 1844858581}
   targetPen3: {fileID: 1669425517}
@@ -11515,7 +11532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CylinderAnimator: {fileID: 1434382784}
   numberOfFollowers: {fileID: 1436150208}
-  targetPlayer: {fileID: 1050851271}
+  targetPlayer: {fileID: 393623755}
   targetPen1: {fileID: 211934080}
   targetPen2: {fileID: 350239396}
   targetPen3: {fileID: 669424959}
@@ -11632,7 +11649,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7753959873323634767}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
@@ -12467,7 +12484,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 1050851270}
+  m_Camera: {fileID: 281087688}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -13012,7 +13029,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7753959873323634767}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab68ce6587aab0146b8dabefbd806791, type: 3}
   m_Name: 

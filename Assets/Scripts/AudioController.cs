@@ -13,104 +13,108 @@ public class AudioController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (audioStore.GetValue("$GKHello") != null)            //if this has no value...
+        if (audioStore.GetValue("$GKHello") != null)            //if this has value...
         {
             audioStore.SetValue("$GKHello", 0);                 //set it to zero
         }
-        if (audioStore.GetValue("$BKHello") != null)             //if this has no value...
+        if (audioStore.GetValue("$BKHello") != null)            //if this has value...
         {       
             audioStore.SetValue("$BKHello", 0);                 //set it to zero
         }
-        if (audioStore.GetValue("$NKHello") != null)             //if this has no value...
+        if (audioStore.GetValue("$NKHello") != null)            //if this has value...
         {
-            audioStore.SetValue("$NKHello", 0);              
+            audioStore.SetValue("$NKHello", 0);                 //set it to zero
         }
-        if (audioStore.GetValue("$JudgeHello") != null)
+        if (audioStore.GetValue("$JudgeHello") != null)         //if this has value...
         {
-            audioStore.SetValue("$JudgeHello", 0);
+            audioStore.SetValue("$JudgeHello", 0);              //set it to zero
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        GKHi = (int)audioStore.GetValue("$GKHello").AsNumber;
-        BKHi = (int)audioStore.GetValue("$BKHello").AsNumber;
-        NKHi = (int)audioStore.GetValue("$NKHello").AsNumber;
-        JudgeHi = (int)audioStore.GetValue("$JudgeHello").AsNumber;
+        GKHi = (int)audioStore.GetValue("$GKHello").AsNumber;           //sets value from audiostore to an integer
+        BKHi = (int)audioStore.GetValue("$BKHello").AsNumber;           //sets value from audiostore to an integer
+        NKHi = (int)audioStore.GetValue("$NKHello").AsNumber;           //sets value from audiostore to an integer
+        JudgeHi = (int)audioStore.GetValue("$JudgeHello").AsNumber;     //sets value from audiostore to an integer
 
-        if (GKHi == 1)
+        if (GKHi == 1)                      //if the int is equal to one
         {
-            if (GKOnOff == true)
-            {
-                GKHelloControl();
-                Debug.Log("GKHello");
+            if (GKOnOff == true)            //and the bool is true
+            {   
+                GKHelloControl();           //call this function         
+                //Debug.Log("GKHello");     //debug to check is working
             }
         }
-        if (GKHi == 0)
+        if (GKHi == 0)                      //if int is equal to zero
         {
-            GKOnOff = true;
+            GKOnOff = true;                 //set bool to true
         }
 
-        if (BKHi == 1)
+        if (BKHi == 1)                      //if the int is equal to zero
         {
-            if (BKOnOff == true)
+            if (BKOnOff == true)            //and the bool is true
             {
-                BKHelloControl();
+                BKHelloControl();           //call this function
             }
         }
-        if (BKHi == 0)
+        if (BKHi == 0)                      //if the int is equal to zero
         {
-            BKOnOff = true;
+            BKOnOff = true;                 //set bool to true
         }
 
-        if (NKHi == 1)
+        if (NKHi == 1)                      //if the int is equal to one
         {
-            if (NKOnOff == true)
+            if (NKOnOff == true)            //and the bool is true
             {
-                NKHelloControl();
+                NKHelloControl();           //call this function
             }
         }
-        if (NKHi == 0)
+        if (NKHi == 0)                      //if equal to zero
         {
-            NKOnOff = true;
+            NKOnOff = true;                 //set bool to true
         }
-
-        if (JudgeHi == 1)
+            
+        if (JudgeHi == 1)                   //if this int is equal to one
         {
-            if (JudgeOnOff == true)
+            if (JudgeOnOff == true)         //and the bool true
             {
-                JudgeHelloControl();
+                JudgeHelloControl();        //call function
             }
+        }
+        if (JudgeHi == 0)                   //if equal to zero
+        {
+            JudgeOnOff = true;              //set bool to true
         }
     }
 
     void GKHelloControl()
     {
-        GKIntro.Play();
-        Debug.Log("GK Hello Control");
-        GKOnOff = false;
+        GKIntro.Play();                     //set audio source to play
+        //Debug.Log("GK Hello Control");      //debug to check is working
+        GKOnOff = false;                    //sets bool false
     }
 
     void BKHelloControl()
     {
-        BKIntro.Play();
-        Debug.Log("BK Hello Control");
-        BKOnOff = false;
+        BKIntro.Play();                     //set audio source to play
+        //Debug.Log("BK Hello Control");      //debug to check is working
+        BKOnOff = false;                    //set bool false
     }
 
     void NKHelloControl()
     {
-        NKIntro.Play();
-        Debug.Log("NK Hello Control");
-        NKOnOff = false;
+        NKIntro.Play();                     //set audio source to play
+        //Debug.Log("NK Hello Control");      //debug to check is working
+        NKOnOff = false;                    //set bool false
     }
 
     void JudgeHelloControl()
     {
-        JudgeIntro.Play();
-        Debug.Log("Judge hello");
-        JudgeOnOff = false;
+        JudgeIntro.Play();                  //set audio source to play
+        //Debug.Log("Judge hello");           //debug to check is working
+        JudgeOnOff = false;                 //set bool false
     }
 
 }

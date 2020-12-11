@@ -22,9 +22,9 @@ public class FollowerController : MonoBehaviour
         {
             yarnStorage.SetValue("$neutralFollowers", 0);           //set neutralFollower value to zero
         }
-        if (yarnStorage.GetValue("$JudgeDance") != null)
+        if (yarnStorage.GetValue("$JudgeDance") != null)            //if value is not null
         {
-            yarnStorage.SetValue("$JudgeDance", 0);
+            yarnStorage.SetValue("$JudgeDance", 0);                 //set to zero
         }
 
     }
